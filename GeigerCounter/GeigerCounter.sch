@@ -978,7 +978,26 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pad name="A" x="-5.08" y="0" drill="1" diameter="1.9812"/>
 <pad name="C" x="5.08" y="0" drill="1" diameter="1.9812"/>
 <text x="-2.921" y="1.651" size="0.6096" layer="25">&gt;Name</text>
-<text x="-2.921" y="-0.508" size="1.016" layer="21" ratio="12">&gt;Value</text>
+<text x="-2.921" y="-0.508" size="1.016" layer="27" ratio="12">&gt;Value</text>
+</package>
+<package name="XF2M-0615-1A">
+<description>XF2M-0615-1A Footprint</description>
+<smd name="1" x="-1.27" y="2.54" dx="1.1" dy="0.25" layer="1" rot="R90"/>
+<smd name="2" x="-0.77" y="2.54" dx="1.1" dy="0.25" layer="1" rot="R90"/>
+<smd name="3" x="-0.27" y="2.54" dx="1.1" dy="0.25" layer="1" rot="R90"/>
+<smd name="4" x="0.23" y="2.54" dx="1.1" dy="0.25" layer="1" rot="R90"/>
+<smd name="5" x="0.73" y="2.54" dx="1.1" dy="0.25" layer="1" rot="R90"/>
+<smd name="6" x="1.23" y="2.54" dx="1.1" dy="0.25" layer="1" rot="R90"/>
+<smd name="P$7" x="2.88" y="-1.36" dx="1.7" dy="1.5" layer="1"/>
+<smd name="P$8" x="-2.92" y="-1.36" dx="1.7" dy="1.5" layer="1"/>
+<wire x1="-1.77" y1="2.54" x2="-3.27" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-3.27" y1="2.54" x2="-3.27" y2="-0.46" width="0.127" layer="21"/>
+<wire x1="-3.27" y1="-2.46" x2="3.23" y2="-2.46" width="0.127" layer="21"/>
+<wire x1="3.23" y1="-0.46" x2="3.23" y2="2.54" width="0.127" layer="21"/>
+<wire x1="3.23" y1="2.54" x2="1.73" y2="2.54" width="0.127" layer="21"/>
+<circle x="-2.07" y="3.64" radius="0.2" width="0.127" layer="21"/>
+<text x="4.23" y="-0.16" size="1.27" layer="25">&gt;tName</text>
+<text x="4.23" y="1.64" size="1.27" layer="27">&gt;tValue</text>
 </package>
 </packages>
 <symbols>
@@ -1000,19 +1019,111 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="-1.0414" y1="1.7526" x2="-0.4318" y2="1.7526" width="0.254" layer="94"/>
 <wire x1="-1.0668" y1="1.7526" x2="-1.0668" y2="2.286" width="0.254" layer="94"/>
 </symbol>
+<symbol name="XF2M-0615-1A">
+<description>XF2M-0615-1A 6 Pin Connector</description>
+<pin name="1" x="-5.08" y="12.7" visible="pin" length="middle"/>
+<pin name="2" x="-5.08" y="10.16" visible="pin" length="middle"/>
+<pin name="3" x="-5.08" y="7.62" visible="pin" length="middle"/>
+<pin name="4" x="-5.08" y="5.08" visible="pin" length="middle"/>
+<pin name="5" x="-5.08" y="2.54" visible="pin" length="middle"/>
+<pin name="6" x="-5.08" y="0" visible="pin" length="middle"/>
+<wire x1="0" y1="15.24" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="15.24" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-2.54" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="15.24" x2="0" y2="15.24" width="0.254" layer="94"/>
+<pin name="MNT2" x="10.16" y="-5.08" visible="pin" length="short" direction="nc" rot="R90"/>
+<pin name="MNT1" x="12.7" y="-5.08" visible="pin" length="short" direction="nc" rot="R90"/>
+<text x="0" y="15.494" size="1.27" layer="95">&gt;Name</text>
+<text x="0" y="-4.064" size="1.27" layer="96">&gt;Value</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="S1223">
 <description>S1223 PIN Photodiode</description>
 <gates>
-<gate name="G$1" symbol="S1223" x="0" y="0"/>
+<gate name="D$1" symbol="S1223" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="DIODE-1N4001">
 <connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="D$1" pin="A" pad="A"/>
+<connect gate="D$1" pin="C" pad="C"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XF2M-0615-1A">
+<description>XF2M-0615-1A</description>
+<gates>
+<gate name="P$1" symbol="XF2M-0615-1A" x="-5.08" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="XF2M-0615-1A">
+<connects>
+<connect gate="P$1" pin="1" pad="1"/>
+<connect gate="P$1" pin="2" pad="2"/>
+<connect gate="P$1" pin="3" pad="3"/>
+<connect gate="P$1" pin="4" pad="4"/>
+<connect gate="P$1" pin="5" pad="5"/>
+<connect gate="P$1" pin="6" pad="6"/>
+<connect gate="P$1" pin="MNT1" pad="P$7"/>
+<connect gate="P$1" pin="MNT2" pad="P$8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="supply1">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="VCC">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VCC" prefix="P+">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="VCC" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1034,22 +1145,67 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="IC1" library="SparkFun-AnalogIC" deviceset="OPAMP-DUAL" device="U"/>
 <part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="AXIAL-0.3"/>
 <part name="C1" library="SparkFun-Passives" deviceset="CAP" device="PTH2"/>
-<part name="U$1" library="GeigerCounter" deviceset="S1223" device=""/>
+<part name="D1" library="GeigerCounter" deviceset="S1223" device=""/>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="P+1" library="supply1" deviceset="VCC" device=""/>
+<part name="U$1" library="GeigerCounter" deviceset="XF2M-0615-1A" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="IC1" gate="A" x="35.56" y="66.04"/>
-<instance part="IC1" gate="B" x="139.7" y="66.04"/>
-<instance part="R1" gate="G$1" x="38.1" y="33.02"/>
-<instance part="C1" gate="G$1" x="68.58" y="30.48"/>
-<instance part="U$1" gate="G$1" x="96.52" y="38.1"/>
+<instance part="IC1" gate="A" x="60.96" y="22.86"/>
+<instance part="IC1" gate="B" x="116.84" y="17.78"/>
+<instance part="R1" gate="G$1" x="22.86" y="43.18"/>
+<instance part="C1" gate="G$1" x="99.06" y="0"/>
+<instance part="D1" gate="D$1" x="15.24" y="10.16" rot="R90"/>
+<instance part="GND1" gate="1" x="182.88" y="0"/>
+<instance part="P+1" gate="VCC" x="182.88" y="35.56"/>
+<instance part="U$1" gate="P$1" x="190.5" y="12.7"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="VCC" class="0">
+<segment>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
+<wire x1="182.88" y1="33.02" x2="182.88" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="P$1" pin="1"/>
+<wire x1="182.88" y1="25.4" x2="185.42" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="U$1" gate="P$1" pin="6"/>
+<wire x1="185.42" y1="12.7" x2="182.88" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="182.88" y1="12.7" x2="182.88" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="P$1" pin="MNT2"/>
+<wire x1="182.88" y1="5.08" x2="182.88" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="5.08" x2="200.66" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="5.08" x2="200.66" y2="7.62" width="0.1524" layer="91"/>
+<junction x="182.88" y="5.08"/>
+<pinref part="U$1" gate="P$1" pin="MNT1"/>
+<wire x1="200.66" y1="5.08" x2="203.2" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="5.08" x2="203.2" y2="7.62" width="0.1524" layer="91"/>
+<junction x="200.66" y="5.08"/>
+</segment>
+</net>
+<net name="P3.5" class="0">
+<segment>
+<pinref part="U$1" gate="P$1" pin="3"/>
+<wire x1="185.42" y1="20.32" x2="175.26" y2="20.32" width="0.1524" layer="91"/>
+<label x="177.8" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="P3.4" class="0">
+<segment>
+<pinref part="U$1" gate="P$1" pin="5"/>
+<wire x1="185.42" y1="15.24" x2="175.26" y2="15.24" width="0.1524" layer="91"/>
+<label x="177.8" y="15.24" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
