@@ -216,8 +216,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="3.23" y1="-0.46" x2="3.23" y2="2.54" width="0.127" layer="21"/>
 <wire x1="3.23" y1="2.54" x2="1.73" y2="2.54" width="0.127" layer="21"/>
 <circle x="-2.07" y="3.64" radius="0.2" width="0.127" layer="21"/>
-<text x="4.23" y="-0.16" size="1.27" layer="25">&gt;tName</text>
-<text x="4.23" y="1.64" size="1.27" layer="27">&gt;tValue</text>
+<text x="4.23" y="-0.16" size="1.27" layer="25">&gt;Name</text>
+<text x="4.23" y="1.64" size="1.27" layer="27">&gt;Value</text>
 </package>
 </packages>
 </library>

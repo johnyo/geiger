@@ -996,8 +996,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="3.23" y1="-0.46" x2="3.23" y2="2.54" width="0.127" layer="21"/>
 <wire x1="3.23" y1="2.54" x2="1.73" y2="2.54" width="0.127" layer="21"/>
 <circle x="-2.07" y="3.64" radius="0.2" width="0.127" layer="21"/>
-<text x="4.23" y="-0.16" size="1.27" layer="25">&gt;tName</text>
-<text x="4.23" y="1.64" size="1.27" layer="27">&gt;tValue</text>
+<text x="4.23" y="-0.16" size="1.27" layer="25">&gt;Name</text>
+<text x="4.23" y="1.64" size="1.27" layer="27">&gt;Value</text>
 </package>
 </packages>
 <symbols>
@@ -1171,39 +1171,39 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <segment>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <wire x1="182.88" y1="33.02" x2="182.88" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="P$1" pin="1"/>
 <wire x1="182.88" y1="25.4" x2="185.42" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="P$1" pin="1"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="U$1" gate="P$1" pin="6"/>
 <wire x1="185.42" y1="12.7" x2="182.88" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="182.88" y1="12.7" x2="182.88" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="P$1" pin="MNT2"/>
 <wire x1="182.88" y1="5.08" x2="182.88" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="5.08" x2="200.66" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="5.08" x2="200.66" y2="7.62" width="0.1524" layer="91"/>
 <junction x="182.88" y="5.08"/>
-<pinref part="U$1" gate="P$1" pin="MNT1"/>
 <wire x1="200.66" y1="5.08" x2="203.2" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="5.08" x2="203.2" y2="7.62" width="0.1524" layer="91"/>
 <junction x="200.66" y="5.08"/>
+<pinref part="U$1" gate="P$1" pin="6"/>
+<pinref part="U$1" gate="P$1" pin="MNT2"/>
+<pinref part="U$1" gate="P$1" pin="MNT1"/>
 </segment>
 </net>
 <net name="P3.5" class="0">
 <segment>
-<pinref part="U$1" gate="P$1" pin="3"/>
 <wire x1="185.42" y1="20.32" x2="175.26" y2="20.32" width="0.1524" layer="91"/>
 <label x="177.8" y="20.32" size="1.778" layer="95"/>
+<pinref part="U$1" gate="P$1" pin="3"/>
 </segment>
 </net>
 <net name="P3.4" class="0">
 <segment>
-<pinref part="U$1" gate="P$1" pin="5"/>
 <wire x1="185.42" y1="15.24" x2="175.26" y2="15.24" width="0.1524" layer="91"/>
 <label x="177.8" y="15.24" size="1.778" layer="95"/>
+<pinref part="U$1" gate="P$1" pin="5"/>
 </segment>
 </net>
 </nets>
