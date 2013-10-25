@@ -2453,8 +2453,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="H1" library="holes" deviceset="MOUNT-HOLE" device="3.0"/>
 <part name="H2" library="holes" deviceset="MOUNT-HOLE" device="3.0"/>
-<part name="H3" library="holes" deviceset="MOUNT-HOLE" device="3.0"/>
-<part name="H4" library="holes" deviceset="MOUNT-HOLE" device="3.0"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
@@ -2518,8 +2516,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="P+3" gate="VCC" x="180.34" y="226.06"/>
 <instance part="H1" gate="G$1" x="482.6" y="238.76"/>
 <instance part="H2" gate="G$1" x="482.6" y="231.14"/>
-<instance part="H3" gate="G$1" x="482.6" y="223.52"/>
-<instance part="H4" gate="G$1" x="482.6" y="215.9"/>
 <instance part="GND8" gate="1" x="86.36" y="254"/>
 <instance part="GND9" gate="1" x="99.06" y="254"/>
 <instance part="P+5" gate="VCC" x="99.06" y="271.78"/>
