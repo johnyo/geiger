@@ -159,6 +159,14 @@
 <text x="32.1564" y="17.9578" size="1.27" layer="21">C4</text>
 <text x="32.9946" y="24.638" size="0.889" layer="21">R11</text>
 <text x="30.2514" y="24.3078" size="0.889" layer="21" rot="R90">R7</text>
+<text x="21.0312" y="33.1978" size="1.524" layer="21">RadBoard</text>
+<text x="25.7302" y="31.5468" size="1.524" layer="21">v1</text>
+<text x="46.2534" y="37.5412" size="1.524" layer="20">This layer is the board outline</text>
+<text x="46.5074" y="34.7218" size="1.524" layer="20">Please use the dark outline as the board outline</text>
+<text x="46.228" y="26.3398" size="1.524" layer="20">Please use all standard spec for this 2 layer board</text>
+<text x="46.228" y="18.3388" size="1.524" layer="20">If problems arise during fabrication, please call, anytime day or night:</text>
+<text x="65.405" y="14.224" size="1.524" layer="20">John O'Hollaren</text>
+<text x="65.405" y="10.8712" size="1.524" layer="20">541-508-8501</text>
 </plain>
 <libraries>
 <library name="SparkFun-AnalogIC">
