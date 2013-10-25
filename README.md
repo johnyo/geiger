@@ -6,7 +6,7 @@ Low Voltage 2.5V PIN Diode Based Geiger Counter
 Purpose
 ======
 
-Super low voltgae Geiger Counter using a modified PIN diode. This is a complete Geiger Counter using a modified PIN diode. See Bernd Laquai's paper on the subject here: http://www.opengeiger.de/ABGDetektor_en.pdf
+Super low voltgae Geiger Counter using a modified PIN photodiode. See Bernd Laquai's paper on the subject here: http://www.opengeiger.de/ABGDetektor_en.pdf
 
 Project Structure
 =================
