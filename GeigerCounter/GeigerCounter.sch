@@ -2596,22 +2596,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </net>
 <net name="GND" class="0">
 <segment>
-<wire x1="441.96" y1="223.52" x2="439.42" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="439.42" y1="223.52" x2="436.88" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="441.96" y1="223.52" x2="436.88" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="436.88" y1="223.52" x2="431.8" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="431.8" y1="223.52" x2="421.64" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="421.64" y1="223.52" x2="421.64" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="P$1" pin="6"/>
-<pinref part="U$1" gate="P$1" pin="MNT1"/>
-<wire x1="459.74" y1="215.9" x2="459.74" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="P$1" pin="MNT2"/>
-<wire x1="457.2" y1="215.9" x2="457.2" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="457.2" y1="215.9" x2="459.74" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="457.2" y1="215.9" x2="439.42" y2="215.9" width="0.1524" layer="91"/>
-<junction x="457.2" y="215.9"/>
-<wire x1="439.42" y1="215.9" x2="439.42" y2="223.52" width="0.1524" layer="91"/>
-<junction x="439.42" y="223.52"/>
 <pinref part="TP_GND" gate="G$1" pin="TP"/>
 <junction x="431.8" y="223.52"/>
 <pinref part="TP_GND1" gate="G$1" pin="TP"/>
