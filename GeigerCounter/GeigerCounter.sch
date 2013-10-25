@@ -2465,7 +2465,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="TP_VCC1" library="testpad" deviceset="PTR1" device="PAD1-20"/>
 <part name="TP_GND1" library="testpad" deviceset="PTR1" device="PAD1-20"/>
-<part name="TP_GND2" library="testpad" deviceset="PTR1" device="PAD1-20"/>
 <part name="TP_VBIAS" library="testpad" deviceset="PTR1" device="PAD1-20"/>
 <part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOT23" value="DNP"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -2528,7 +2527,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="GND15" gate="1" x="116.84" y="190.5"/>
 <instance part="TP_VCC1" gate="G$1" x="426.72" y="238.76" rot="R180"/>
 <instance part="TP_GND1" gate="G$1" x="436.88" y="220.98"/>
-<instance part="TP_GND2" gate="G$1" x="426.72" y="220.98"/>
 <instance part="TP_VBIAS" gate="G$1" x="144.78" y="210.82" rot="R180"/>
 <instance part="D2" gate="G$1" x="281.94" y="233.68"/>
 <instance part="GND3" gate="1" x="340.36" y="213.36"/>
@@ -2602,8 +2600,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="439.42" y1="223.52" x2="436.88" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="436.88" y1="223.52" x2="431.8" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="431.8" y1="223.52" x2="426.72" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="426.72" y1="223.52" x2="421.64" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="431.8" y1="223.52" x2="421.64" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="421.64" y1="223.52" x2="421.64" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="P$1" pin="6"/>
 <pinref part="U$1" gate="P$1" pin="MNT1"/>
@@ -2619,8 +2616,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <junction x="431.8" y="223.52"/>
 <pinref part="TP_GND1" gate="G$1" pin="TP"/>
 <junction x="436.88" y="223.52"/>
-<pinref part="TP_GND2" gate="G$1" pin="TP"/>
-<junction x="426.72" y="223.52"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="V-"/>
