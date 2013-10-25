@@ -19,6 +19,3 @@ Project Structure
 
 /Library
 * Any components that are not found in the Eagle or SparkFun default libraries, I have made myself and they are here.
-
-/BOM
-* Bill of materials
