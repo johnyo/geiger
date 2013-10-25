@@ -14,8 +14,8 @@ Project Structure
 /GeigerCounter
 * The Eagle PCB project
 
-/FabricationOutput
-* This holds the fabrication output script for the 2 layer board (from SparkFun)
-
 /Library
 * Any components that are not found in the Eagle or SparkFun default libraries, I have made myself and they are here.
+
+/GeigerCounter/FabricationOutput
+* This holds the fabrication output script. Based on SparkFun's script. It also holds the zip file Gerber files that were sent out for fabrication.
