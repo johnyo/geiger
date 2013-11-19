@@ -2473,7 +2473,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="C3" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1u"/>
 <part name="C4" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="DNP"/>
 <part name="C5" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="DNP"/>
-<part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="10M"/>
+<part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="1M"/>
 <part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="DNP"/>
 <part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="0"/>
 <part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="100"/>
